@@ -23,7 +23,7 @@
 		String connectionUrl = "jdbc:postgresql://localhost:5432/";
 		String dbName = "Shopping";
 		String userId = "postgres";
-		String password = "admin";
+		String password = "1234";
 
 		try {
 			Class.forName(driverName);

@@ -20,7 +20,7 @@ public class UserModel {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	
 	@Column(name="id")
-	int id;
+	long id;
 	
 	@Column(name="name")
 	String name;
@@ -31,11 +31,11 @@ public class UserModel {
 	@Column(name="price")
 	String price;
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -74,7 +74,7 @@ public class UserModel {
 				+  ", getClass()=" + getClass() + ", hashCode()="
 				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
-	public UserModel(int id, String name, String category, String price) {
+	public UserModel(long id, String name, String category, String price) {
 		super();
 		this.id = id;
 		this.name = name;
